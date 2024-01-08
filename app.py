@@ -3,8 +3,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
 
 
 # the homepage for your site will be at the route below
@@ -28,3 +27,7 @@ def home():
 @app.route('/bootstrap')
 def bootstrap():
     return render_template("bootstrap.html")
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
