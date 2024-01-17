@@ -5,6 +5,17 @@ app = Flask(__name__)
 
 
 
+@app.route('/bootstrap')
+def bootstrap():
+    return render_template("bootstrap.html")
+
+@app.route('/bootstrap-grid')
+def bootstrap_grid():
+    return render_template
+
+@app.route('/name')
+def name():
+    return "Jiselle Frerichs"
 
 # the homepage for your site will be at the route below
 @app.route('/')
@@ -24,9 +35,7 @@ def home():
 
 
 # Rendering a html template with the Bootstrap framework
-@app.route('/bootstrap')
-def bootstrap():
-    return render_template("bootstrap.html")
+
 
 
 if __name__ == '__main__':
